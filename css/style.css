@@ -338,10 +338,11 @@ button:focus {
 
 /*=============LEFT SECTION============*/
 .left{
-    border-radius: 0px 79px 79px 0px;
--moz-border-radius: 0px 79px 79px 0px;
--webkit-border-radius: 0px 79px 79px 0px;
-border: 0px solid #000000;
+  border-radius: 0px 79px 79px 0px;
+  -webkit-border-radius: 0px 79px 79px 0px;
+  -moz-border-radius: 0px 79px 79px 0px;
+  -ms-border-radius: 0px 79px 79px 0px;
+  -o-border-radius: 0px 79px 79px 0px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -351,8 +352,9 @@ border: 0px solid #000000;
     -webkit-border-radius: 0px ;
     border: 0px solid #000000;
     }
-   
   }
+
+
 
 .info{
     background-color: #071439;
@@ -479,13 +481,34 @@ border: 0px solid #000000;
 /*================  PROJECT GALARY ===================*/
 
 
+.left{
+  border-radius: 0px 79px 79px 0px;
+  -webkit-border-radius: 0px 79px 79px 0px;
+  -moz-border-radius: 0px 79px 79px 0px;
+  -ms-border-radius: 0px 79px 79px 0px;
+  -o-border-radius: 0px 79px 79px 0px;
+}
+
+@media only screen and (max-width: 750px) {
+    .left{
+        border-radius: 0px ;
+    -moz-border-radius: 0px ;
+    -webkit-border-radius: 0px ;
+    border: 0px solid #000000;
+    }
+  }
+
 .right{
-    border-radius: 20px 20px 0px 0px;
-    -webkit-border-radius: 20px 20px 0px 0px;
-    -moz-border-radius: 20px 20px 0px 0px;
-    -ms-border-radius: 20px 20px 0px 0px;
-    -o-border-radius: 20px 20px 0px 0px;
-background: #f1f2f6;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #f1f2f6;
+}
+.pad{
+  padding-left: 110px;
 }
 @media only screen and (max-width: 750px) {
     .right{
@@ -494,6 +517,9 @@ background: #f1f2f6;
     -webkit-border-radius: 0px;
     border: 0px solid #000000;
     background: #f1f2f6;
+    }
+    .pad{
+      padding-left: 0px;
     }
   }
 .project-heading-section{
